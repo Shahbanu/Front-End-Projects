@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipies Book</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2d6b07bb7.js" crossorigin="anonymous"></script>
+    
+
+</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg  bg-light sticky-top">
+                <div class="container-fluid ">
+                  <a class="navbar-brand" href="#"><img width="32" height="32" src="https://img.icons8.com/external-febrian-hidayat-gradient-febrian-hidayat/32/external-Chef-Hat-kitchen-and-tableware-febrian-hidayat-gradient-febrian-hidayat.png" alt="external-Chef-Hat-kitchen-and-tableware-febrian-hidayat-gradient-febrian-hidayat"/></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent" id="my-navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active home-a" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="categories-link nav-link" href="#">Categories</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/addRecipe.html">Add Recipe</a>
+                      </li>
+                    </ul>
+                    <form id="keyword-search" class="d-flex" role="search">
+                      <input id="keyword-search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button id="keyword-search-button" class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              <div id="div-header">
+                <h1>RECIPIES BOOK</h1>
+                <div class="search-container-2-flex-row">
+                    <div class="search-container-2-column">
+                        <h3>Search by category</h3>
+                        <input id="category-search-input" type="text" class="form-control" name="category"  value="" placeholder="Category"/>
+                        <button id="category-search-button" type="button" class="btn btn-outline-success btn-search">Search</button>
+                    </div>
+                    <div class="search-container-2-column">
+                        <h3>Search by ingredients</h3>
+                        <input id="ingredients-search-input" type="text" class="form-control" name="category"  value="" placeholder="Ingredients"/>
+                        <button id="ingredients-search-button" type="button" class="btn btn-outline-success btn-search">Search</button>
+                    </div>
+
+                </div>
+              </div>
+        </header>
+        <section id="recipies-section">
+
+        </section>
+        <section>
+            <div class="show-container">
+                <div class="show-child-div">
+                    <button id="popular-recipies" type="button" class="btn btn-lg btn-outline-success btn-search">Show popular recipies</button>
+                </div>
+                <div class="show-child-div">   
+                    <button id="all-recipies" type="button" class="btn btn-lg btn-outline-success btn-search">Show all recipies</button>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <h6 class="footer-text">E-mail Me or find me on LinkedIN</h6>
+    
+            <div class="social">
+                <a href="shahbanushanu@gmail.com" target="_blank"><i class="fa-solid fa-envelope-circle-check"></i></a>
+                <a href="https://www.linkedin.com/in/fathimathshahbanu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Shahbanu" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+    
+            <div class="copywrite">
+                <p id="copy-s"></p>
+            </div>
+    
+        </footer>
+
+        <script type="" src="./index.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </body>
+</html>

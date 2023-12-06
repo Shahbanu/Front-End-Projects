@@ -1,0 +1,272 @@
+/* HEADER (NAV)(SEARCH IMAGE) */
+header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    background-color: rgb(59, 146, 117)!important;
+    opacity: 0.85;
+}
+
+#keyword-search-button{
+    color: black;
+}
+
+#div-header {
+    width: 80%;
+    min-height:40%;
+    padding: 10% auto;
+    margin: 4% auto;
+    background-image: url("../images/bg-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(69, 69, 100);
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+h1 {
+    padding-top: 4%;
+    font-weight: 600;
+    color: rgb(59, 146, 117);
+}
+
+.search-container-2-flex-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    padding: 150px 100px 300px 150px;
+}
+
+.search-container-2-column{
+    padding-left: 5%;
+}
+
+.btn-search {
+    margin: 4%;
+}
+
+h3 {
+    font-weight: 600;
+    color: rgb(59, 146, 117);
+}
+
+
+/* BODY */
+body {
+    background-color: #F9B572;
+    text-align: center;
+}
+
+
+/* SECTION */
+.show-container {
+    width: 80%;
+    margin: 8% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15%;
+    
+}
+
+/* SECTION RECIPIES */
+.recipies-section{
+    display: none;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    width: 80%;
+    margin: 4% auto;
+    /* border: 4px solid rgb(59, 146, 117); */
+    border-radius: 15px;
+}
+
+.recipe-div {
+    border: 3px solid rgb(59, 146, 117);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 15px;
+    text-align: center;
+    width: 28%;
+    font-size: larger;
+}
+
+
+
+.recipe-div button {
+    margin: 5%;
+}
+
+.add-recipe-button {
+    font-size: 35px;
+    font-weight: 700;
+    background-color: greenyellow;
+    border-radius: 40%;
+    padding: 20px;
+    margin: 30px;
+    max-height: 3%;
+}
+
+
+.recipe-div p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px 0px;
+}
+
+.recipe-div p:nth-child(even) {
+    color: rgb(59, 68, 146);
+}
+
+.recipe-div p:nth-child(odd){
+    color: rgb(59, 146, 117);
+}
+
+.recipe-div p:firs{
+    color: rgb(59, 146, 117);
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 146, 117);
+    border-radius: 30px 30px 0 0;
+    border: 2px solid #ff94518e;
+    opacity: 0.8;
+}
+
+.footer-text{
+    color: azure;
+    margin-top: 2%;
+}
+
+.social{
+    margin: 3% auto;
+}
+
+.social i{
+    font-size: 2.5em;
+    padding: 0 20px;
+}
+
+footer p{
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+.social a:hover{
+    color: azure;
+}
+
+
+/* TABLET AND PHONE */
+@media only screen and (max-width: 972px) {
+    #div-header {
+        
+        padding: 0;
+    }
+
+    .search-container-2-flex-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10%;
+    }
+
+    .search-container-2-column{
+        margin: 5% auto;
+    }
+
+    footer{
+        border-radius: 0;
+    }
+
+    .social i{
+        font-size: 1.5em; 
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .display-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-div {
+        width: 92%;
+        max-width: 100%;
+        font-size: smaller;
+    }
+
+    #add-recipe textarea{
+        max-width: 98%;
+    }
+
+    #add-recipe label {
+        max-width: 98%;
+    }
+
+    #add-recipe input {
+        max-width: 98%;
+        min-width: 95%;
+    }
+}
+
+
+/* ADD RECIPE */
+
+#add-recipe {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin: 4% auto;
+    text-align: center;
+}
+
+#add-recipe label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+#add-recipe input {
+    max-width: 32%;
+}
+
+#add-recipe button {
+    margin: 3% auto;
+    padding: 0.5% 2%;
+}
+
+.div-checkbox{
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-top: 2%;
+}
+
+
